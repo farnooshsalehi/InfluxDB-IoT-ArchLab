@@ -1,0 +1,45 @@
+# https://docs.espressif.com/projects/idf-ci/en/latest/guides/gitignore.html
+
+.pytest_cache/
+__pycache__/
+
+# esp-idf built binaries
+build/
+build_*_*/
+out/
+_build/
+
+
+sdkconfig
+sdkconfig.old
+
+# VS Code workspace file
+*.code-workspace
+
+# CI configuration
+.gitlab-ci.yml
+
+# Dependencies and lock files
+managed_components
+.devcontainer/
+
+# clangd set
+.clangd
+compile_commands.json
+.clang-format
+
+# pre-commit
+.pre-commit-config.yaml
+
+# idf-ci build run output
+build_summary_*.xml
+app_info_*.txt
+size_info_*.txt
+
+# pytest-embedded log folder
+pytest_embedded_log/
+
+# idf-component-manager output
+dependencies.lock
+
+.vscode/
